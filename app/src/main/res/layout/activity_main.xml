@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please enter your credentials"
+        android:textSize="24dp" />
+
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:hint="FirstName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFirstName"
+        android:ems="10"
+        android:hint="LastName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/editTextEmail"
+        android:text="Insert"
+        android:onClick="insert"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/updateButton"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="update"-->
+<!--        android:textSize="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="25dp"-->
+<!--        android:layout_toRightOf="@id/insertButton"-->
+<!--        android:layout_below="@id/editTextEmail"-->
+<!--        android:onClick="update"-->
+<!--    />-->
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/viewButton"
+        android:text="Search"
+        android:textSize="10dp"
+        android:onClick="search"
+        />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/insertButton"
+        android:text="View"
+        android:textSize="10dp"
+        android:onClick="view"
+        />
+
+</RelativeLayout>
